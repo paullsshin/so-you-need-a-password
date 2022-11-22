@@ -44,7 +44,8 @@ function generatePassword () {
         var range = [Math.floor(Math.random()* long.length)];
         getPassword = getPassword + long[range];
     }
-return getPassword;
+
+    return getPassword;
 
 };
 
