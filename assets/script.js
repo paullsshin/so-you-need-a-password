@@ -23,8 +23,30 @@ function generatePassword () {
     big = confirm ("Would you like to have upper case letters in your password?");
     characters = confirm ("Would you like to have special characters in your password?");
 
+    if (digits) {
+        long = long.concat(numbers);
+    }
 
-}
+    if (small) {
+        long = long.concat(lower);
+    }
+
+    if (big) {
+        long = long.concat(upper);
+    }
+
+    if (characters) {
+        long = long.concat(special);
+    }
+
+    var getPassword = "";
+    for (var i = 0; i < characterLength; i++) {
+        var range = [Math.floor(Math.random()* long.length)];
+        getPassword = getPassword + long[range];
+    }
+return getPassword;
+
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
