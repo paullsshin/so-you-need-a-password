@@ -17,15 +17,16 @@ function generatePassword () {
          prompt ("Please enter a valid number digit.");
         //  added another parameter for if the user decides to "type" the number
     }
+    var choices =
     // adding confirms to each option to gather info on what kind of password the user wants
     digits = confirm ("Would you like to have numbers in your password?");
     small = confirm ("Would you like to have lower case letters in your password?");
     big = confirm ("Would you like to have upper case letters in your password?");
     characters = confirm ("Would you like to have special characters in your password?");
-
+    
     if (digits) {
         long = long.concat(numbers);
-    }
+    } 
 
     if (small) {
         long = long.concat(lower);
@@ -37,6 +38,12 @@ function generatePassword () {
 
     if (characters) {
         long = long.concat(special);
+    } 
+// if the user does not select any options, they will be alerted that they will need to try again to create their password
+    if (choices === true) {
+        alert("Your password has been created!");
+    } else if (choices === false) {
+        alert("Please choose at least one option. Click on 'Generate Password' to try again!")
     }
 
     var getPassword = "";
@@ -46,7 +53,7 @@ function generatePassword () {
     }
 
     return getPassword;
-
+    
 };
 
 // Get references to the #generate element
