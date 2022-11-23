@@ -32,8 +32,8 @@ Visit my [repository](https://github.com/paullsshin/so-you-need-a-password) to r
 * Once the user answers all of the prompts, their password will be generated for them!
 
 <p align="center">
-<img src ="./assets/img/Password%20Generator.gif" width="70%>
-
+<img src ="./assets/img/Password%20Generator.gif" width="70%">
+</p>
 <hr>
 
 ## __License__ 💳
