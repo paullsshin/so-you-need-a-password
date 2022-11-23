@@ -30,9 +30,9 @@ Visit my [repository](https://github.com/paullsshin/so-you-need-a-password) to r
 * Users will then be asked if they would like to have numbers, lower case letters, upper case letters, and special characters in their password.
 * If the user does not choose an option, they will be asked to try again
 * Once the user answers all of the prompts, their password will be generated for them!
+
 <p align="center">
 <img src ="./assets/img/Password%20Generator.gif" width="70%>
-</p>
 
 <hr>
 
