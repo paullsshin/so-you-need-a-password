@@ -13,6 +13,7 @@ function generatePassword () {
     characterLength = prompt("How many characters would you like to have in your password? Please choose a number between 8 and 128 characters.");
     if (characterLength < 8 || characterLength > 128) {
         prompt("Please choose a valid number between 8 and 128!");
+        return alert("Please choose numbers within the range. Click on 'Generate Password' to try again!");
     } else if (isNaN(characterLength)) {
          prompt ("Please enter a valid number digit.");
         //  added another parameter for if the user decides to "type" the number
